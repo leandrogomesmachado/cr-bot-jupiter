@@ -10,6 +10,9 @@ const { TOKEN_LIST_URL } = require("@jup-ag/api");
 const { default: TextInput } = require("ink-text-input");
 const fs = require("fs");
 
+const main_network = 
+
+
 function Tokens() {
 	let isMountedRef = useRef(false);
 
@@ -94,10 +97,9 @@ function Tokens() {
 			axios.get(TOKEN_LIST_URL[network]).then((res) => {
 				isMountedRef.current && setTokens(res.data);
 				// save tokens to tokens.json file
+				const jsonData = JSON.stringify(res.data, null, 2);
 				fs.writeFileSync(
-					"./temp/tokens.json",
-					JSON.stringify(res.data, null, 2)
-				);
+					"./temp/tokens.json", jsonData);
 			});
 		}
 	}, []);
