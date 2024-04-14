@@ -6,7 +6,7 @@ const { useContext, useState, useEffect, useRef } = require("react");
 const { default: SelectInput } = require("ink-select-input");
 const chalk = require("chalk");
 const { default: axios } = require("axios");
-const { TOKEN_LIST_URL } = require("@jup-ag/core");
+const { TOKEN_LIST_URL } = require("@jup-ag/api");
 const { default: TextInput } = require("ink-text-input");
 const fs = require("fs");
 
