@@ -1,10 +1,10 @@
 {
-	"name": "solana-jupiter-bot",
+	"name": "cr-bot-jupiter",
 	"version": "0.1.72-beta-jupv4",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ARBProtocol/solana-jupiter-bot.git"
+		"url": "https://github.com/leandrogomesmachado/cr-bot-jupiter.git"
 	},
 	"bin": "./src/index.js",
 	"engines": {
